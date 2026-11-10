@@ -48,11 +48,6 @@ h1{font:800 clamp(42px,7vw,84px)/.98 var(--head);letter-spacing:-.03em;margin:0 
 .stage canvas{width:100%;height:100%;display:block}
 section{padding:64px 0;border-top:1px solid var(--line)}
 h2{font:800 clamp(28px,4vw,40px)/1.1 var(--head);letter-spacing:-.02em;margin:0 0 32px}
-.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1.5px solid var(--ink);background:var(--card)}
-.stats div{padding:22px 24px;border-right:1px solid var(--line)}
-.stats div:last-child{border:0}
-.stats strong{display:block;font:800 34px/1.1 var(--head)}
-.stats span{color:var(--muted);font-size:15px}
 .job{display:grid;grid-template-columns:200px 1fr;gap:32px;margin-bottom:8px}
 .job .when{font:600 15px var(--head);color:var(--muted);padding-top:6px}
 .job h3{font:700 24px/1.2 var(--head);margin:0}
@@ -77,9 +72,7 @@ footer{padding:28px 0 40px;color:var(--muted);font-size:14px;border-top:1px soli
   .stage{justify-self:center}
   .job,.cols{grid-template-columns:1fr;gap:8px}
   .cols{gap:16px}
-  .stats{grid-template-columns:1fr}
-  .stats div{border-right:0;border-bottom:1px solid var(--line)}
-  .nav nav a.hide{display:none}
+      .nav nav a.hide{display:none}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
@@ -112,14 +105,6 @@ footer{padding:28px 0 40px;color:var(--muted);font-size:14px;border-top:1px soli
       <canvas id="c"></canvas>
     </div>
   </div>
-
-  <section style="padding-top:48px;border-top:0">
-    <div class="stats">
-      <div><strong>5+ years</strong><span>Building 3D web applications at Ozorix</span></div>
-      <div><strong>&lt;10 → 60+ FPS</strong><span>Real-time rendering of large object sets</span></div>
-      <div><strong>MSc, with honours</strong><span>Informatics, AI specialization</span></div>
-    </div>
-  </section>
 
   <section id="experience">
     <h2>Experience</h2>
