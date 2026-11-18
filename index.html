@@ -30,6 +30,7 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--amber);outline-offs
 .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
 header.nav{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--paper) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
 .nav .wrap{display:flex;align-items:center;justify-content:space-between;height:58px}
+.brand{color:var(--ink);text-decoration:none}
 .nav b{font-family:var(--head);font-weight:800;font-size:18px}
 .nav nav{display:flex;gap:20px;align-items:center}
 .nav nav a{color:var(--ink);text-decoration:none;font-size:15px;font-weight:500}
@@ -80,9 +81,9 @@ footer{padding:28px 0 40px;color:var(--muted);font-size:14px;border-top:1px soli
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 </head>
-<body>
+<body id="top">
 <header class="nav"><div class="wrap">
-  <b>Roman Ghughunishvili</b>
+  <a class="brand" href="#top"><b>Roman Ghughunishvili</b></a>
   <nav>
     <a class="hide" href="#experience">Experience</a>
     <a class="hide" href="#skills">Skills</a>
