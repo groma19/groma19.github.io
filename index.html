@@ -199,7 +199,7 @@ footer{padding:28px 0 40px;color:var(--muted);font-size:14px;border-top:1px soli
   size();addEventListener('resize',size);
   stage.addEventListener('pointerdown',function(e){drag=true;lx=e.clientX;ly=e.clientY;stage.setPointerCapture(e.pointerId)});
   stage.addEventListener('pointerup',function(){drag=false});
-  stage.addEventListener('pointermove',function(e){if(!drag)return;ty+=(e.clientX-lx)*.008;tx+=(e.clientY-ly)*.008;lx=e.clientX;ly=e.clientY});
+  stage.addEventListener('pointermove',function(e){if(!drag)return;ty-=(e.clientX-lx)*.008;tx-=(e.clientY-ly)*.008;lx=e.clientX;ly=e.clientY});
   function css(v){return getComputedStyle(root).getPropertyValue(v).trim()}
   var ax=0,ay=0;
   function proj(x,y,z){
